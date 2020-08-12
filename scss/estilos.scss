@@ -1,0 +1,552 @@
+@import "colores";
+@font-face{
+    src: url("../assets/fonts/din1451alt.ttf");
+    font-family: DIN;
+}
+@font-face{
+    src: url("../assets/fonts/din1451alt\ G.ttf");
+    font-family: DIN-bold;
+}
+
+
+*{margin:0;padding:0; box-sizing:border-box; }
+
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family:DIN;
+    font-style: normal;
+    /*font-weight: 300; /*700 bold*/
+    background-color: white;
+    height: 100%;
+}
+
+
+.header__zposition{
+    z-index: 999;
+}
+
+.navbar-light{
+    font-size: 15px;
+    box-shadow: 2px 2px 10px $azulprimario;
+    
+    color:$azulprimario;
+    background-color: $celesteNavbar;
+    position:sticky;
+    top:0;
+    padding:0px;
+    margin:0px;
+
+}
+
+.menu__logo{
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+}
+
+.menu{
+    padding:0px;
+    margin:0px;
+}
+
+.navbar-light {
+    
+    .navbar-nav .nav-link{
+        color:$azulprimario;
+        &:hover{
+            color:$azulCeleste;
+        }
+    }
+    .navbar-toggler {
+        color: $azulprimario;
+        border-color: rgba(0,119,182,1);
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,119,182, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+
+}
+
+
+nav {
+    ul{
+        display:flex;
+        list-style: none;
+        width: 100%;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    li{
+        position: relative;
+        padding: 31px;
+
+        ul{
+            display:none;
+        }
+        &:hover{
+            color:$azulCeleste;
+            /*background-image: linear-gradient(to top,rgba(144, 224, 239) ,rgba(255, 255, 255) );*/
+            -moz-box-shadow:    inset 0 0 5px #ADE8F4;
+            -webkit-box-shadow: inset 0 0 5px #ADE8F4;
+            box-shadow:         inset 0 0 5px #ADE8F4;
+
+            ul{
+                display:block;
+                position: absolute;
+                left:0;
+                top:80px;
+                background-color: #f2f6f8;
+                color:$azulprimario;
+            }
+        }
+    }
+}
+
+.dropdown-item{
+    background-color: $celesteNavbar;
+    color:$azulprimario;
+    font-size: 1.5rem;
+    width: 182px;
+    &:hover{
+        background-color: $celesteNavbar;
+        color:$azulCeleste;
+    }
+}
+.navbar-light .navbar-nav .show > .nav-link{
+    color:$azulprimario;
+    text-decoration: none;
+}
+
+
+.dropdown-menu{
+    border:none;
+    background-color: transparent;
+    position:absolute;
+    top:89px;
+    left:0;
+}
+
+//inicio de portada
+
+#inicio{
+    position:relative;
+}
+
+
+
+.portada{
+    width: 100%;
+    height: 600px;
+    position:relative;
+    z-index: 2;
+    animation-name: aparecerDesaparecer;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction:alternate;
+
+}
+
+.portada2{
+    width: 100%;
+    height: 600px;
+    position:absolute;
+    left:0;
+}
+@keyframes aparecerDesaparecer{
+    0%{opacity:1}
+    45%{opacity:1}
+    55%{opacity:0}
+    100%{opacity:0}
+
+}
+/*Aca empieza la sección nosotros*/
+#nosotros{
+    background-color: $celesteNavbar;
+
+    h3{
+        font-weight: bolder;
+        font-size: 3rem;
+        text-align: center;
+        color:$anaranjadoRGB;
+    }
+
+    p{
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        color:$azulRGB;
+    }
+}
+
+.nosotros__contenido{
+    display:flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    padding:50px;
+}
+
+.uno{
+    background-image: url('../assets/index/buraleoportada.jpg');
+}
+
+.nosotros__imagen__fondo{
+    background-image: url('../assets/index/montaniasfondo.jpg');
+}
+
+.nosotros__imagen__fija {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%; 
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: table;
+
+    h1{
+        display: table-cell;
+        vertical-align: middle;
+        height: 600px;
+    }
+  }
+
+  .nosotros__fondo {
+    background-color: RGBA(2, 62, 138, 0.7); }
+.nosotros__texto{
+    justify-content: center;
+
+  
+}
+
+
+
+.nosotrosequipo{
+    margin:50px;
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img{
+        height: 400px;
+        margin: auto;
+    }
+}
+
+/*aca termina la sección nosotros*/
+/*actividades*/
+#actividades{
+    background-color: $anaranjadoRGB;
+    padding-top:70px;
+    padding-bottom:70px;
+    h3{
+        color:white;
+        text-align: center;
+        font-size: 3rem;
+        padding-bottom: 40px;
+    }
+}
+
+.actividades__contenido{
+    margin:auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+
+    p{
+        padding-top: 3px;
+        color:white;
+        font-size: 2rem;
+    }
+}
+
+.actividades__contenido__principal{
+    display:flex;
+    flex-flow:row wrap;
+}
+.actividades__icono{
+    width: 100px;
+    height: 100px;
+    img{
+        max-width: 100%;
+        margin: auto;
+    }
+
+}
+
+
+
+/*.tarjeta{
+    box-shadow: 0 4px 8px 0 #CAF0F8, 0 6px 20px 0 #CAF0F8;
+    max-width: 300px;
+    margin:0px;
+    padding:0px;
+
+    img{
+        width: 100%;
+        height: 250px;
+    }
+
+    &:hover{
+        /*box-shadow: 0 0px 0px 0 #CAF0F8, 0 0px 0px 0 #CAF0F8;*/
+   /* transform: translate(2px,2px);
+    }
+}*/
+.container{
+    position:relative;
+    padding:10px;
+    img{
+        display:block;
+        width:100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    &:hover .overlay{
+        opacity:1;
+    }
+}
+
+.overlay{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100;
+    opacity:0;
+    background-color: $primariorgba;
+    transition: .5s ease;
+}
+
+.texto {
+    color: $celesteNavbar;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bolder;
+  }
+
+/*.card-title{
+    text-align: center;
+}*/
+
+/*galeria index*/
+
+#galeria{
+    background-color: $azulprimario;
+    padding-top: 70px;
+
+    h2{
+        color:#f2f6f8;
+        text-align: center;
+        font-size: 4rem;
+        padding-bottom: 50px;
+    }
+}
+
+
+.crop{
+    /*width: 558px;
+    height: 200px;*/
+    padding:0px;
+    margin:0px;
+    overflow: hidden;
+
+    img{
+        width: 100%;
+        object-fit: cover;
+        display:block;
+        transition:transform .5s linear;
+    }
+
+    &:hover img{
+        transform: scale(1.1);
+    }
+    
+}
+
+.gridimagenes{
+    display:flex;
+    flex-flow:row wrap;
+    margin:20px;
+
+}
+
+.banner{
+    text-align: center;
+    padding: 10px;
+    font-size: 3rem;
+    color:#f2f6f8;
+    text-decoration: none;
+
+    a{
+        text-decoration: none;
+        color:#f2f6f8;
+    }
+}
+
+/*aca termina galeria*/
+table{
+    border: 1px solid black;
+    border-width: 1;
+    text-align: center;
+    position: center;
+    margin:auto;
+    font-size: 2rem;
+}
+
+th{
+    border: 1px solid black;
+}
+
+td{
+    border: 1px solid black;
+}
+
+/*comienzo de footer*/
+
+footer{
+    display:flex;
+    flex-flow: row wrap;
+    flex-basis: 100%;
+    background-color:#4a4444;
+    color:white;
+    justify-content: space-around;
+    align-items: center;
+
+    a{
+        text-decoration: none;
+        color:white; 
+    }
+
+    ul{
+        list-style: none;
+    }
+}
+
+
+.footer__logo{
+    width:110px;
+    height: 90px;
+    margin:20px;
+}
+
+.footer__iconos{
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+
+/*Página actividades */
+.actividad{
+    font-size: 2rem;
+    width: 100%;
+    padding:20px;
+}
+
+
+/*.imagen{
+    max-width: 50%;
+    margin: 20px;
+}*/
+
+.actividades__imagen__fondo{
+    background-image: url("../assets/index/montaniasfondo.jpg");
+}
+
+.actividades__imagen__fija{
+    @extend.nosotros__imagen__fija;
+
+    h2{
+        display: table-cell;
+        vertical-align: middle;
+        height: 300px; 
+        text-align: center;
+        width: 2000px;
+        font-size: 5rem;
+    }
+
+}
+
+.actividades__titulo{
+ text-align: center;
+ font-size: 4rem;
+ font-weight: bold;
+ color:$azulprimario;
+ border-bottom: 1px solid $primariorgba;
+}
+
+.actividades__descripcion{
+    color: black;
+}
+
+
+
+/*seccion galeria*/
+
+.galeriacompleta{
+    display:flex;
+    flex-flow: row, wrap;
+    margin:20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-basis: 100%;
+
+    img{
+        width: 300px;
+    }
+}
+
+.galeria__fondo{
+    background-color: $anaranjadoRGBA;
+}
+
+
+/*Seccion contacto*/
+
+.contenidocontacto{
+    background-image: url("../assets/index/trekking.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.formulario{
+    display:flex;
+    background-color: $celesteNavbar;
+    opacity: 95%;
+    margin:50px;
+    padding: 2rem;
+    font-size: 2rem;
+    width: 27%;
+    flex-flow: column wrap;
+    border-radius: 15px;
+
+    textarea{
+        width:90%;
+    height: 150px;
+    }
+}
+
+
+
