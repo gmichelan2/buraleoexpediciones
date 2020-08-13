@@ -114,6 +114,7 @@ nav {
     color:$azulprimario;
     font-size: 1.5rem;
     width: 182px;
+    text-align: center;
     &:hover{
         background-color: $celesteNavbar;
         color:$azulCeleste;
@@ -139,11 +140,58 @@ nav {
     position:relative;
 }
 
+.inicio__imagen__uno{
+    background-image: url("../assets/index/buraleoportada.jpg");
+}
+
+.inicio__imagen__dos{
+    background-image: url("../assets/index/trekking2.jpg");
+}
+
+.inicio__fondo{
+    background-color: transparent;
+}
+.inicio__imagen__fija{
+    height: 500px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    //background-position: center center;
+    background-image: url("../assets/index/buraleoportada.jpg");
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: table;
+    animation-name: slide;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction:alternate;
+    h2{
+        display: table-cell;
+        vertical-align: middle;
+        height: 300px; 
+        text-align: center;
+        width: 2000px;
+        font-size: 5rem;
+        color: #f2f6f8;
+    }
+}
+
+@keyframes slide{
+    0%{
+        background-image: url("../assets/index/buraleoportada.jpg");
+    }
+    33%{
+        background-image: url("../assets/index/trekking2.jpg");
+    }
+    67%{
+        background-image: url("../assets/index/trekking2.jpg");
+    }
+}
 
 
 .portada{
-    width: 100%;
-    height: 600px;
     position:relative;
     z-index: 2;
     animation-name: aparecerDesaparecer;
@@ -155,8 +203,6 @@ nav {
 }
 
 .portada2{
-    width: 100%;
-    height: 600px;
     position:absolute;
     left:0;
 }
@@ -195,9 +241,9 @@ nav {
     padding:50px;
 }
 
-.uno{
+/*.uno{
     background-image: url('../assets/index/buraleoportada.jpg');
-}
+}*/
 
 .nosotros__imagen__fondo{
     background-image: url('../assets/index/montaniasfondo.jpg');
@@ -286,24 +332,6 @@ nav {
 
 }
 
-
-
-/*.tarjeta{
-    box-shadow: 0 4px 8px 0 #CAF0F8, 0 6px 20px 0 #CAF0F8;
-    max-width: 300px;
-    margin:0px;
-    padding:0px;
-
-    img{
-        width: 100%;
-        height: 250px;
-    }
-
-    &:hover{
-        /*box-shadow: 0 0px 0px 0 #CAF0F8, 0 0px 0px 0 #CAF0F8;*/
-   /* transform: translate(2px,2px);
-    }
-}*/
 .container{
     position:relative;
     padding:10px;
@@ -345,10 +373,6 @@ nav {
     font-weight: bolder;
   }
 
-/*.card-title{
-    text-align: center;
-}*/
-
 /*galeria index*/
 
 #galeria{
@@ -365,8 +389,6 @@ nav {
 
 
 .crop{
-    /*width: 558px;
-    height: 200px;*/
     padding:0px;
     margin:0px;
     overflow: hidden;
@@ -445,7 +467,7 @@ footer{
 
 
 .footer__logo{
-    width:110px;
+    width:100px;
     height: 90px;
     margin:20px;
 }

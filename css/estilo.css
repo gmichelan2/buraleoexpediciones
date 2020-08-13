@@ -90,7 +90,8 @@ nav li {
   background-color: RGBA(242, 246, 248, 0.9);
   color: #0077B6;
   font-size: 1.5rem;
-  width: 182px; }
+  width: 182px;
+  text-align: center; }
   .dropdown-item:hover {
     background-color: RGBA(242, 246, 248, 0.9);
     color: #00b4d8; }
@@ -109,9 +110,48 @@ nav li {
 #inicio {
   position: relative; }
 
-.portada {
+.inicio__imagen__uno {
+  background-image: url("../assets/index/buraleoportada.jpg"); }
+
+.inicio__imagen__dos {
+  background-image: url("../assets/index/trekking2.jpg"); }
+
+.inicio__fondo {
+  background-color: transparent; }
+
+.inicio__imagen__fija {
+  height: 500px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../assets/index/buraleoportada.jpg");
   width: 100%;
-  height: 600px;
+  color: white;
+  text-align: center;
+  display: table;
+  animation-name: slide;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate; }
+  .inicio__imagen__fija h2 {
+    display: table-cell;
+    vertical-align: middle;
+    height: 300px;
+    text-align: center;
+    width: 2000px;
+    font-size: 5rem;
+    color: #f2f6f8; }
+
+@keyframes slide {
+  0% {
+    background-image: url("../assets/index/buraleoportada.jpg"); }
+  33% {
+    background-image: url("../assets/index/trekking2.jpg"); }
+  67% {
+    background-image: url("../assets/index/trekking2.jpg"); } }
+
+.portada {
   position: relative;
   z-index: 2;
   animation-name: aparecerDesaparecer;
@@ -121,8 +161,6 @@ nav li {
   animation-direction: alternate; }
 
 .portada2 {
-  width: 100%;
-  height: 600px;
   position: absolute;
   left: 0; }
 
@@ -158,9 +196,9 @@ nav li {
   justify-content: center;
   padding: 50px; }
 
-.uno {
-  background-image: url("../assets/index/buraleoportada.jpg"); }
-
+/*.uno{
+    background-image: url('../assets/index/buraleoportada.jpg');
+}*/
 .nosotros__imagen__fondo {
   background-image: url("../assets/index/montaniasfondo.jpg"); }
 
@@ -230,22 +268,6 @@ nav li {
     max-width: 100%;
     margin: auto; }
 
-/*.tarjeta{
-    box-shadow: 0 4px 8px 0 #CAF0F8, 0 6px 20px 0 #CAF0F8;
-    max-width: 300px;
-    margin:0px;
-    padding:0px;
-
-    img{
-        width: 100%;
-        height: 250px;
-    }
-
-    &:hover{
-        /*box-shadow: 0 0px 0px 0 #CAF0F8, 0 0px 0px 0 #CAF0F8;*/
-/* transform: translate(2px,2px);
-    }
-}*/
 .container {
   position: relative;
   padding: 10px; }
@@ -281,9 +303,6 @@ nav li {
   text-align: center;
   font-weight: bolder; }
 
-/*.card-title{
-    text-align: center;
-}*/
 /*galeria index*/
 #galeria {
   background-color: #0077B6;
@@ -295,8 +314,6 @@ nav li {
     padding-bottom: 50px; }
 
 .crop {
-  /*width: 558px;
-    height: 200px;*/
   padding: 0px;
   margin: 0px;
   overflow: hidden; }
@@ -354,7 +371,7 @@ footer {
     list-style: none; }
 
 .footer__logo {
-  width: 110px;
+  width: 100px;
   height: 90px;
   margin: 20px; }
 

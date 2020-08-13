@@ -1,1 +1,1 @@
-Este repositorio contiene los archivos correspondientes a la página web de Buraleo Expediciones, la cual fue presentada como trabajo final del curso de Diseño Web de Coderhouse.
+Este repositorio contiene los archivos correspondientes a la página web de Buraleo Expediciones, la cual fue presentada como trabajo final del curso de Diseño Web de Coderhouse
