@@ -13,6 +13,19 @@
   padding: 0;
   box-sizing: border-box; }
 
+.contenedor {
+  align-items: center; }
+
+@media (min-width: 1400px) {
+  .contenedor {
+    margin-left: 50px;
+    margin-right: 50px; } }
+
+@media (min-width: 1500px) {
+  .contenedor {
+    margin-left: 150px;
+    margin-right: 150px; } }
+
 html {
   font-size: 62.5%; }
 
@@ -20,7 +33,9 @@ body {
   font-family: DIN;
   font-style: normal;
   /*font-weight: 300; /*700 bold*/
-  background-color: white;
+  background: url("../assets/index/buraleofondo.png");
+  background-repeat: space;
+  background-position: top;
   height: 100%; }
 
 .header__zposition {
@@ -48,7 +63,7 @@ body {
 .navbar-light .navbar-nav .nav-link {
   color: #0077B6; }
   .navbar-light .navbar-nav .nav-link:hover {
-    color: #00b4d8; }
+    color: RGB(180, 96, 34); }
 
 .navbar-light .navbar-toggler {
   color: #0077B6;
@@ -73,11 +88,9 @@ nav li {
   nav li ul {
     display: none; }
   nav li:hover {
-    color: #00b4d8;
+    color: RGB(180, 96, 34);
     /*background-image: linear-gradient(to top,rgba(144, 224, 239) ,rgba(255, 255, 255) );*/
-    -moz-box-shadow: inset 0 0 5px #ADE8F4;
-    -webkit-box-shadow: inset 0 0 5px #ADE8F4;
-    box-shadow: inset 0 0 5px #ADE8F4; }
+    box-shadow: 0 4px 2px -2px RGB(180, 96, 34); }
     nav li:hover ul {
       display: block;
       position: absolute;
@@ -359,7 +372,7 @@ td {
 footer {
   display: flex;
   flex-flow: row wrap;
-  flex-basis: 100%;
+  width: 100%;
   background-color: #4a4444;
   color: white;
   justify-content: space-around;
