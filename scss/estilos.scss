@@ -71,6 +71,11 @@ body{
     padding:0px;
     margin:0px;
 }
+.nav-item{
+    .nav-link{
+        color:$anaranjadoRGB;
+    }
+}
 
 .navbar-light {
     
@@ -144,7 +149,7 @@ nav {
     }
 }
 .navbar-light .navbar-nav .show > .nav-link{
-    color:$azulprimario;
+    color:$anaranjadoRGB;
     text-decoration: none;
 }
 
@@ -294,7 +299,6 @@ nav {
     background-color: RGBA(2, 62, 138, 0.7); }
 .nosotros__texto{
     justify-content: center;
-
   
 }
 
