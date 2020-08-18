@@ -412,10 +412,10 @@ footer {
 .actividades__imagen__fija h2 {
   display: table-cell;
   vertical-align: middle;
-  height: 300px;
+  height: 80px;
   text-align: center;
   width: 2000px;
-  font-size: 5rem; }
+  font-size: 3rem; }
 
 .actividades__titulo {
   text-align: center;
@@ -428,15 +428,15 @@ footer {
   color: black; }
 
 /*seccion galeria*/
-.galeriacompleta {
-  display: flex;
-  flex-flow: row, wrap;
-  margin: 20px;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-basis: 100%; }
-  .galeriacompleta img {
-    width: 300px; }
+.cbp-panel {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.cbp-item-wrapper {
+  width: inherit; }
+
+.cbp-item {
+  width: 25%; }
 
 .galeria__fondo {
   background-color: RGB(180, 96, 34, 0.7); }

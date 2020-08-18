@@ -530,10 +530,10 @@ footer{
     h2{
         display: table-cell;
         vertical-align: middle;
-        height: 300px; 
+        height: 80px; 
         text-align: center;
         width: 2000px;
-        font-size: 5rem;
+        font-size: 3rem;
     }
 
 }
@@ -554,17 +554,17 @@ footer{
 
 /*seccion galeria*/
 
-.galeriacompleta{
-    display:flex;
-    flex-flow: row, wrap;
-    margin:20px;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-basis: 100%;
+.cbp-panel{
+    margin-top:15px;
+    margin-bottom: 15px;
+}
 
-    img{
-        width: 300px;
-    }
+.cbp-item-wrapper{
+    width: inherit;
+}
+
+.cbp-item{
+    width: 25%;
 }
 
 .galeria__fondo{

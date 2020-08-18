@@ -6,14 +6,20 @@
     <title>Buraleo expediciones - Galería</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="Fotos de expediciones realizadas por buraleo">
+    <!---mdb bostrap-->
+    <!--link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css"-->
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="cubeportfolio/css/cubeportfolio.min.css">
     <link rel="stylesheet" href="css/estilo.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
         rel="stylesheet">
-    <link rel="icon" type="image/png" href="assets/index/icono buraleo.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="assets/index/buraleologofinal.png" sizes="16x16">
 </head>
 
 <body>
@@ -21,7 +27,8 @@
         <header class="header__zposition sticky-top">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand col-xs-3 col-sm-2 col-lg-5" href="index.html">
-                    <img class="menu__logo img-fluid" src="assets/index/buraleologofinal.png" width="90" height="60" alt="">
+                    <img class="menu__logo img-fluid" src="assets/index/buraleologofinal.png" width="90" height="60"
+                        alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,9 +56,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="index.html#galeria">GALERÍA</a>
                         </li>
-                        <li class="nav-item">
+                        <!--li class="nav-item">
                             <a class="nav-link" href="fechas.html">FECHAS</a>
-                        </li>
+                        </li-->
                         <li class="nav-item">
                             <a class="nav-link" href="contacto.html">CONTACTO</a>
                         </li>
@@ -61,24 +68,89 @@
         </header>
         <div class="actividades__imagen__fija actividades__imagen__fondo ">
             <div class="galeria__fondo">
-                <h2>Galería de imágenes</h2>
+                <h2>EXPERIENCIAS BURALEO</h2>
             </div>
         </div>
-        <h3>Actividades El Chocón</h3>
-        <article class="galeriacompleta">
-            <img src="assets/galeria/chocon/img1.jpg" alt="">
-            <img src="assets/galeria/chocon/img2.jpg" alt="">
-            <img src="assets/galeria/chocon/img3.jpg" alt="">
-            <img src="assets/galeria/chocon/img4.jpg" alt="">
-
-        </article>
-        <h3>Actividades Parque Norte</h3>
-        <article class="galeriacompleta">
-            <img src="assets/galeria/Rapel parque norte/img1.jpg" alt="">
-            <img src="assets/galeria/Rapel parque norte/img2.jpg" alt="">
-            <img src="assets/galeria/Rapel parque norte/img3.jpg" alt="">
-            <img src="assets/galeria/Rapel parque norte/img4.jpg" alt="">
-        </article>
+        <div class="cbp-panel">
+            <div id="filters-container" class="cbp-l-filters-buttonCenter">
+                <button data-filter="*" class="cbp-filter-item cbp-filter-item-active">
+                    TODO
+                </button>
+                <button data-filter=".chocon" class="cbp-filter-item">
+                    CHOCÓN
+                </button>
+                <button data-filter=".parquenorte" class="cbp-filter-item">
+                    PARQUE NORTE
+                </button>
+                <button data-filter=".primerospinos" class="cbp-filter-item">
+                    PRIMEROS PINOS
+                </button>
+            </div>
+            <div id="grid-container" class="cbp cbp-l-grid-masonry-projects cbp-caption-active cbp-caption-zoom cbp-ready">
+                <div class="cbp-item chocon illustration">
+                    <a title="custom title 1" href="#"><img src="assets/galeria/chocon/img1.jpg"
+                            alt="custom alt 1" /></a>
+                </div>
+                <div class="cbp-item chocon illustration">
+                    <a title="custom title 1" href="#"><img src="assets/galeria/chocon/img2.jpg"
+                            alt="custom alt 1" /></a>
+                </div>
+                <div class="cbp-item chocon illustration">
+                    <a title="custom title 1" href="#"><img src="assets/galeria/chocon/img3.jpg"
+                            alt="custom alt 1" /></a>
+                </div>
+                <div class="cbp-item chocon illustration">
+                    <a title="custom title 1" href="#"><img src="assets/galeria/chocon/img4.jpg"
+                            alt="custom alt 1" /></a>
+                </div>
+                <div class="cbp-item chocon illustration">
+                    <a title="custom title 1" href="#"><img src="assets/galeria/chocon/img5.jpeg"
+                            alt="custom alt 1" /></a>
+                </div>
+                <div class="cbp-item parquenorte">
+                    <a title="custom title 1" href="#"><img src="assets/galeria/Rapel parque norte/img1.jpg"
+                            alt="custom alt 1" /></a>
+                </div>
+                <div class="cbp-item parquenorte">
+                    <a title="custom title 1" href="#"><img src="assets/galeria/Rapel parque norte/img2.jpg"
+                            alt="custom alt 1" /></a>
+                </div>
+                <div class="cbp-item parquenorte">
+                    <a title="custom title 1" href="#"><img src="assets/galeria/Rapel parque norte/img3.jpg"
+                            alt="custom alt 1" /></a>
+                </div>
+                <div class="cbp-item parquenorte">
+                    <a title="custom title 1" href="#"><img src="assets/galeria/Rapel parque norte/img4.jpg"
+                            alt="custom alt 1" /></a>
+                </div>
+                <div class="cbp-item parquenorte">
+                    <a title="custom title 1" href="#"><img src="assets/galeria/Rapel parque norte/img5.jpg"
+                            alt="custom alt 1" /></a>
+                </div>
+                <div class="cbp-item parquenorte">
+                    <a title="custom title 1" href="#"><img src="assets/galeria/Rapel parque norte/img6.jpg"
+                            alt="custom alt 1" /></a>
+                </div>
+                <div class="cbp-item parquenorte">
+                    <a title="custom title 1" href="#"><img src="assets/galeria/Rapel parque norte/img7.jpg"
+                            alt="custom alt 1" /></a>
+                </div>
+                <div class="cbp-item parquenorte">
+                    <a title="custom title 1" href="#"><img src="assets/galeria/Rapel parque norte/img8.jpg"
+                            alt="custom alt 1" /></a>
+                </div>
+                <div class="cbp-item primerospinos">
+                    <a title="custom title 1" href="#"><img src="assets/galeria/Primerospinos/img1.jpg" alt="custom alt 1" /></a>
+                </div>
+                <div class="cbp-item primerospinos">
+                    <a title="custom title 1" href="#"><img src="assets/galeria/Primerospinos/img2.jpg" alt="custom alt 1" /></a>
+                </div>
+                <div class="cbp-item primerospinos">
+                    <a title="custom title 1" href="#"><img src="assets/galeria/Primerospinos/img3.jpg" alt="custom alt 1" /></a>
+                </div>
+            </div>
+       
+        </div>
         <footer>
             <div class="footer1">
                 <img class="footer__logo" src="assets/index/selloburaleoblanco.png" alt="logo">
@@ -96,6 +168,7 @@
             </ul>
         </footer>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -105,6 +178,32 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            var gridContainer = jQuery('#grid-container'),
+                filtersContainer = $('#filters-container');
+
+            // init cubeportfolio
+            gridContainer.cubeportfolio({
+                // cubeportfolio options
+            });
+
+            //activate filters for cubeportfolio
+            filtersContainer.on('click', 'button', function (e) {
+
+                // cache current button clicked
+                var me = jQuery(this);
+
+                // add class cbp-filter-item-active on the current button clicked and remove from other buttons
+                me.addClass('cbp-filter-item-active').siblings().removeClass('cbp-filter-item-active');
+
+                // call cubeportfolio filter function
+                gridContainer.cubeportfolio('filter', me.data('filter'));
+
+            });
+        });
+    </script>
 </body>
 
 </html>
