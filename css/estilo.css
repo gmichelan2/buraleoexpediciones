@@ -432,14 +432,30 @@ footer {
   margin-top: 15px;
   margin-bottom: 15px; }
 
-.cbp-item-wrapper {
-  width: inherit; }
-
 .cbp-item {
   width: 25%; }
 
+.cbp-lightbox:hover img {
+  transform: scale(1.1); }
+
+.cbp-lightbox img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .5s linear; }
+
 .galeria__fondo {
   background-color: RGB(180, 96, 34, 0.7); }
+
+.cbp-l-filters-buttonCenter .cbp-filter-item.cbp-filter-item-active {
+  color: white;
+  background-color: RGB(0, 145, 197);
+  border: 0; }
+
+.cbp-l-filters-buttonCenter .cbp-filter-item {
+  border-radius: 10px;
+  border-color: RGB(180, 96, 34);
+  color: RGB(180, 96, 34); }
 
 /*Seccion contacto*/
 .contenidocontacto {
