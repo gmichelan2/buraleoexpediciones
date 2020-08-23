@@ -198,12 +198,24 @@ nav {
     h2{
         display: table-cell;
         vertical-align: middle;
-        height: 300px; 
+        height: 150px; 
         text-align: center;
         width: 2000px;
         font-size: 5rem;
-        color: #f2f6f8;
     }
+}
+
+.inicio__primer_titulo{
+    color:$anaranjadoRGB;
+}
+
+.inicio__segundo_titulo{
+    color:$anaranjadoRGB;
+    font-size: 6rem;
+}
+
+.inicio__tercer__titulo{
+    color:$azulRGB;
 }
 
 @keyframes slide{
@@ -296,7 +308,7 @@ nav {
   }
 
   .nosotros__fondo {
-    background-color: RGBA(2, 62, 138, 0.7); }
+    background-color: $azulRGBA; }
 .nosotros__texto{
     justify-content: center;
   
@@ -321,12 +333,12 @@ nav {
 /*actividades*/
 #actividades{
     background-color: $anaranjadoRGB;
-    padding-top:70px;
+    padding-top:50px;
     padding-bottom:70px;
     h3{
         color:white;
         text-align: center;
-        font-size: 3rem;
+        font-size: 2rem;
         padding-bottom: 40px;
     }
 }
@@ -482,7 +494,8 @@ footer{
     color:white;
     justify-content: space-around;
     align-items: center;
-
+    height: 145px;
+    font-size: 1.5rem;
     a{
         text-decoration: none;
         color:white; 
@@ -526,6 +539,7 @@ footer{
 
 .actividades__imagen__fija{
     @extend.nosotros__imagen__fija;
+    
 
     h2{
         display: table-cell;
@@ -602,22 +616,56 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    height: 100%;
 }
 
 .formulario{
-    display:flex;
-    background-color: $celesteNavbar;
-    opacity: 95%;
-    margin:50px;
-    padding: 2rem;
-    font-size: 2rem;
-    width: 27%;
-    flex-flow: column wrap;
+    background: rgba(0,145,197,0.7);
+    //background: linear-gradient(0deg, rgba(0,145,197,0.5719421557685574) 48%, rgba(180,96,34,0.7792250689338236) 52%); 
     border-radius: 15px;
+    color: white;
+    margin:30px;
+    legend{
+        text-align: center;
+        font-size: 3rem;
+        margin:auto;
+        width: 70%;
+        border-radius:10px;
+        margin-bottom: 15px;
+        margin-top:10px;
+       // color:$anaranjadoRGBA;
+       //border:0.5px solid #85d0de;
+    }
 
     textarea{
-        width:90%;
-    height: 150px;
+        width:100%;
+        height: 150px;
+        opacity: 75%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size:2rem;
+        color:$azulRGB;
+        border-radius: 10px;
+    }
+    input{
+        opacity:75%;
+    }
+    label{
+        font-size: 2rem;
+       
+    }
+    select{
+        font-size: 2rem;
+        color:$azulRGB;
+    }
+
+    button{
+        margin-bottom:10px;
+        background-color: $anaranjadoRGB;
+        font-size:2rem;
+        width: 100%;
+        border-radius: 10px;
+        border:0;
     }
 }
 
