@@ -61,12 +61,12 @@ body {
   margin: 0px; }
 
 .nav-item .nav-link {
-  color: RGB(180, 96, 34); }
+  color: RGB(215, 93, 20); }
 
 .navbar-light .navbar-nav .nav-link {
   color: #0077B6; }
   .navbar-light .navbar-nav .nav-link:hover {
-    color: RGB(180, 96, 34); }
+    color: RGB(215, 93, 20); }
 
 .navbar-light .navbar-toggler {
   color: #0077B6;
@@ -91,9 +91,9 @@ nav li {
   nav li ul {
     display: none; }
   nav li:hover {
-    color: RGB(180, 96, 34);
+    color: RGB(215, 93, 20);
     /*background-image: linear-gradient(to top,rgba(144, 224, 239) ,rgba(255, 255, 255) );*/
-    box-shadow: 0 4px 2px -2px RGB(180, 96, 34); }
+    box-shadow: 0 4px 2px -2px RGB(215, 93, 20); }
     nav li:hover ul {
       display: block;
       position: absolute;
@@ -113,7 +113,7 @@ nav li {
     color: #00b4d8; }
 
 .navbar-light .navbar-nav .show > .nav-link {
-  color: RGB(180, 96, 34);
+  color: RGB(215, 93, 20);
   text-decoration: none; }
 
 .dropdown-menu {
@@ -133,7 +133,14 @@ nav li {
   background-image: url("../assets/index/trekking2.jpg"); }
 
 .inicio__fondo {
-  background-color: transparent; }
+  background-color: RGBA(242, 246, 248, 0.5);
+  display: flex;
+  flex-flow: column wrap;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: auto; }
 
 .inicio__imagen__fija {
   height: 500px;
@@ -148,33 +155,38 @@ nav li {
   animation-name: slide;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-duration: 5s;
-  animation-direction: alternate; }
-  .inicio__imagen__fija h2 {
-    display: table-cell;
-    vertical-align: middle;
-    height: 150px;
-    text-align: center;
-    width: 2000px;
-    font-size: 5rem; }
+  animation-duration: 20s;
+  animation-direction: alternate;
+  align-items: center; }
 
 .inicio__primer_titulo {
-  color: RGB(180, 96, 34); }
+  color: white;
+  margin: 0px; }
+  .inicio__primer_titulo h2 {
+    font-size: 5rem; }
 
 .inicio__segundo_titulo {
-  color: RGB(180, 96, 34);
-  font-size: 6rem; }
+  color: white;
+  margin: 0px; }
+  .inicio__segundo_titulo h2 {
+    font-size: 7rem; }
 
 .inicio__tercer__titulo {
-  color: RGB(0, 145, 197); }
+  color: RGB(215, 93, 20);
+  font-weight: bolder;
+  margin: 0px; }
+  .inicio__tercer__titulo h2 {
+    font-size: 7rem; }
 
 @keyframes slide {
   0% {
     background-image: url("../assets/index/buraleoportada.jpg"); }
-  33% {
+  25% {
     background-image: url("../assets/index/trekking2.jpg"); }
-  67% {
-    background-image: url("../assets/index/trekking2.jpg"); } }
+  50% {
+    background-image: url("../assets/index/portada3.jpg"); }
+  75% {
+    background-image: url("../assets/index/portada4.jpg"); } }
 
 .portada {
   position: relative;
@@ -206,7 +218,7 @@ nav li {
     font-weight: bolder;
     font-size: 3rem;
     text-align: center;
-    color: RGB(180, 96, 34); }
+    color: RGB(215, 93, 20); }
   #nosotros p {
     font-size: 2rem;
     width: 100%;
@@ -262,7 +274,7 @@ nav li {
 /*aca termina la sección nosotros*/
 /*actividades*/
 #actividades {
-  background-color: RGB(180, 96, 34);
+  background-color: RGB(215, 93, 20);
   padding-top: 50px;
   padding-bottom: 70px; }
   #actividades h3 {
@@ -330,7 +342,7 @@ nav li {
 
 /*galeria index*/
 #galeria {
-  background-color: #0077B6;
+  background-color: RGB(0, 145, 197);
   padding-top: 70px; }
   #galeria h2 {
     color: #f2f6f8;
@@ -465,8 +477,8 @@ footer {
 
 .cbp-l-filters-buttonCenter .cbp-filter-item {
   border-radius: 10px;
-  border-color: RGB(180, 96, 34);
-  color: RGB(180, 96, 34); }
+  border-color: RGB(215, 93, 20);
+  color: RGB(215, 93, 20); }
 
 /*Seccion contacto*/
 .contenidocontacto {
@@ -507,8 +519,10 @@ footer {
     color: RGB(0, 145, 197); }
   .formulario button {
     margin-bottom: 10px;
-    background-color: RGB(180, 96, 34);
+    background-color: RGB(215, 93, 20);
     font-size: 2rem;
     width: 100%;
     border-radius: 10px;
     border: 0; }
+    .formulario button:hover {
+      background-color: #de650c; }

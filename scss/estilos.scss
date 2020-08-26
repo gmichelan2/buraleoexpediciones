@@ -177,7 +177,17 @@ nav {
 }
 
 .inicio__fondo{
-    background-color: transparent;
+    background-color: RGBA(242, 246, 248, 0.5);
+    //background-color:$circuloinicio;
+    display:flex;
+    flex-flow:column wrap;
+    //height: 500px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    //border-radius: 25%;
+    width: 100%;
+    margin:auto;
 }
 .inicio__imagen__fija{
     height: 500px;
@@ -193,41 +203,53 @@ nav {
     animation-name: slide;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    animation-duration: 5s;
+    animation-duration: 20s;
     animation-direction:alternate;
-    h2{
-        display: table-cell;
-        vertical-align: middle;
-        height: 150px; 
-        text-align: center;
-        width: 2000px;
-        font-size: 5rem;
-    }
+    align-items: center;
 }
 
 .inicio__primer_titulo{
-    color:$anaranjadoRGB;
+    //color:$anaranjadoRGB;
+    color:white;
+    margin:0px;
+    h2{
+        font-size:5rem;
+    }
+
 }
 
 .inicio__segundo_titulo{
-    color:$anaranjadoRGB;
-    font-size: 6rem;
+    //color:$anaranjadoRGB;
+    color:white;
+    margin:0px;
+    h2{
+        font-size:7rem;
+    }
 }
 
 .inicio__tercer__titulo{
-    color:$azulRGB;
+    color:$anaranjadoRGB;
+    font-weight: bolder;
+    margin:0px;
+    h2{
+        font-size:7rem;
+    }
 }
 
 @keyframes slide{
     0%{
         background-image: url("../assets/index/buraleoportada.jpg");
     }
-    33%{
+    25%{
         background-image: url("../assets/index/trekking2.jpg");
     }
-    67%{
-        background-image: url("../assets/index/trekking2.jpg");
+    50%{
+        background-image: url("../assets/index/portada3.jpg");
     }
+    75%{
+        background-image: url("../assets/index/portada4.jpg");
+    }
+
 }
 
 
@@ -415,7 +437,7 @@ nav {
 /*galeria index*/
 
 #galeria{
-    background-color: $azulprimario;
+    background-color: $azulRGB;
     padding-top: 70px;
 
     h2{
@@ -666,6 +688,10 @@ footer{
         width: 100%;
         border-radius: 10px;
         border:0;
+
+        &:hover{
+            background-color:#de650c;
+        }
     }
 }
 
