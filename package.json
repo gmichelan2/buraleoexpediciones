@@ -11,8 +11,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "animate.css": "^4.1.0",
+    "aos": "^2.3.4",
     "mdbootstrap": "^4.19.1",
     "node-sass": "^4.14.1",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "wow.js": "^1.2.2"
   }
 }
