@@ -7,13 +7,16 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="desription" content="expediciones patagónicas Buraleo">
     <meta name="keywords" content="aire libre, expediciones, patagonia, chocón, primeros pinos, neuquén, rio negro, parque norte">
+    
+    <!--AOS js scroll-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+    <!--Mi libreria css-->
     <link rel="stylesheet" href="css/estilo.css">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="assets/index/icono buraleo.png" sizes="16x16">
+    
+    <link rel="icon" type="image/png" href="assets/index/buraleologofinal.png" sizes="16x16">
 </head>
 
 <body>
@@ -68,28 +71,28 @@
         <article class="column col-lg-12 justify-content-center">
             
             <section id="actividad1" class="row justify-content-center actividad">   
-                <div class="col-lg-4">
+                <div data-aos="fade-right" class="col-lg-4">
                     <img class="img-fluid" src="assets/expediciones/trekking3.jpg" alt="expedicion chocon">
                 </div>
-                <div class="col-lg-4">
+                <div data-aos="fade-left" class="col-lg-4">
                     <h3 class="actividades__titulo">El chocón</h3>
                     <div class="actividades__descripcion"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam non omnis doloremque consequatur doloribus voluptates quidem expedita, asperiores adipisci illo laboriosam dicta nostrum modi iste voluptatem quae itaque aspernatur deleniti!</div>
                 </div>
             </section>
             <section id="actividad2" class="row justify-content-center actividad">   
-                <div class="col-lg-4">
+                <div data-aos="fade-right" class="col-lg-4">
                     <img class="img-fluid" src="assets/expediciones/primerospinos.jpg" alt="expedicion chocon">
                 </div>
-                <div class="col-lg-4">
+                <div data-aos="fade-left" class="col-lg-4">
                     <h3 class="actividades__titulo">Primeros Pinos</h3>
                         <div class="actividades__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam non omnis doloremque consequatur doloribus voluptates quidem expedita, asperiores adipisci illo laboriosam dicta nostrum modi iste voluptatem quae itaque aspernatur deleniti!</div>
                 </div>
             </section>
             <section id="actividad3" class="row justify-content-center actividad">   
-                <div class="col-lg-4">
+                <div data-aos="fade-right" class="col-lg-4">
                     <img class="img-fluid" src="assets/expediciones/parqueNorte.jpg" alt="expedicion chocon">
                 </div>
-                <div class="col-lg-4">
+                <div data-aos="fade-left" class="col-lg-4">
                     <h3 class="actividades__titulo">Parque Norte</h3>
                     <div class="actividades__descripcion"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam non omnis doloremque consequatur doloribus voluptates quidem expedita, asperiores adipisci illo laboriosam dicta nostrum modi iste voluptatem quae itaque aspernatur deleniti!</div>
                 </div>
@@ -109,6 +112,7 @@
                 <li><a href="https://www.instagram.com/buraleoexpediciones/" target="_blank"><img class="footer__iconos"
                             src="assets/index/instagram blanco png.png" alt="Instagram icon">@buraleoexpediciones</a>
                 </li>
+                <li><a href="http://wa.me/5492996101973">celu</a></li>
             </ul>
         </footer>
     </div>
@@ -121,6 +125,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

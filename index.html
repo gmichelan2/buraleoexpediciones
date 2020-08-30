@@ -4,21 +4,22 @@
     <head>
         <title>Buraleo Expediciones</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <meta name="description" content="Somos una pequeña empresa patagónica radicada en la ciudad de Cipolletti, Río Negro. 
         En Buraleo  ofrecemos expediciones al aire libre basadas en lugares poco conocidos de la patagónia. 
         En cada punto turístico realizamos diversas actividades como trekking, rappel, montañismo y escalada.">
         <meta name="keywords" content="expediciones patagonia aventura, expediciones wildlife patagonia, trekking, rappel, montañismo, expediciones patagonia, aire libre patagonia, excursiones patagonia">
         <!--AOS js scroll-->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!--cubeportfolio-->
+        <link rel="stylesheet" href="cubeportfolio/css/cubeportfolio.min.css">
+
         <!--Bootstrap-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
             integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-        <!--link rel="stylesheet" href="estilos/estilos.css"-->
+        <!--Mi libreria css-->
         <link rel="stylesheet" href="css/estilo.css">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
-            rel="stylesheet">
+        <!--icono en la pestaña-->
         <link rel="icon" type="image/png" href="assets/index/buraleologofinal.png" sizes="16x16">
     </head>
     <body>
@@ -26,7 +27,7 @@
         <header class="header__zposition sticky-top">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand col-xs-3 col-sm-5 col-lg-5" href="index.html">
-                    <img class="menu__logo img-fluid" src="assets/index/buraleologofinal.png" width="90" height="60" alt="">
+                    <img class="menu__logo img-fluid slide-in-blurred-bottom" src="assets/index/buraleologofinal.png" width="90" height="60" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,9 +38,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">INICIO</a>
                         </li>
-                        <!--li class="nav-item">
-                            <a class="nav-link" href="#nosotros">NOSOTROS</a>
-                        </li-->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -54,9 +52,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="galeria.html">GALERÍA</a>
                         </li>
-                        <!--li class="nav-item">
-                            <a class="nav-link" href="fechas.html">FECHAS</a>
-                        </li-->
                         <li class="nav-item">
                             <a class="nav-link" href="contacto.html">CONTACTO</a>
                         </li>
@@ -67,59 +62,38 @@
         <div id="inicio">
             <div class="inicio__imagen__fija">
                 <div class="inicio__fondo">
-                        <!--div class="inicio__primer_titulo"><h2>Bienvenidos a</h2></div-->
-                        <!--div class="inicio__segundo_titulo"><h2>BURALEO</h2></div-->
-                        <div class="inicio__tercer__titulo"><h2>#Animatealaaventura</h2></div>
+                        <div class="contenedor__logo__animado slide-out-blurred-top">
+                            <div class="inicio__logo__externo">
+                                <img src="assets/index/selloexterno.png" alt="">   
+                            </div>
+                            <div class="inicio__logo__interno">
+                                <img src="assets/index/sellointerno.png" alt="">
+                            </div>
+                        </div>
+                        <div class="inicio__tercer__titulo slide-in-blurred-bottom2"><h2 class="inicio__texto">#Animatealaaventura</h2></div>
                 </div>
             </div>
         </div>
         <article id="nosotros">
             <div class="nosotros__contenido">
-                <div class="nosotros__texto  col-lg-6 col-sm-12 col-xs-12">
-                    <!--h3>Nosotros</h3-->
+                <div class="nosotros__texto  col-lg-6 col-sm-12 col-xs-12" data-aos="fade-right">
                     <p>Somos una empresa cuyo objetivo es darle valor agregado a puntos no muy
                         conocidos turísticamente, planificando actividades pedestres al aire libre con diversas salidas
                         profesionales, informativas y seguras en las provincias de Neuquén, Mendoza y Córdoba.</p>
                 </div>
-                <!--div class="nosotrosequipo col-lg-4 col-sm-12 col-xs-12">
-                    <img  src="assets/index/team2.png" alt="imagen de dueños" />
-                </div-->
             </div>
         </article>
-        <!--article id="actividades" class="column">
-            <h2 class="titulogrid">Actividades</h2>
-            <div class="row justify-content-around">
-                    <div class="container col-lg-3 col-md-5 col-sm-12 col-xs-12">
-                        <img class="img-fluid" src="assets/index/rappel.jpg" alt="rappel">
-                        <div class="overlay">
-                            <div class="texto">Rappel</div>
-                        </div>
-                    </div>
-                    <div class="container col-lg-3 col-md-5 col-sm-12 col-xs-12">
-                        <img class="img-fluid" src="assets/index/trekking3.jpg" alt="rappel">
-                        <div class="overlay">
-                            <div class="texto">Trekking</div>
-                        </div>
-                    </div>
-                    <div class="container col-lg-3 col-md-5 col-sm-12 col-xs-12">
-                        <img class="img-fluid" src="assets/index/escalada.jpg" alt="rappel">
-                        <div class="overlay">
-                            <div class="texto">Escalada</div>
-                        </div>
-                    </div>
-                    <div class="container col-lg-3 col-md-5 col-sm-12 col-xs-12">
-                        <img class="img-fluid" src="assets/index/montanismo2.jpg" alt="rappel">
-                        <div class="overlay">
-                            <div class="texto">Montañismo</div>
-                        </div>
-                    </div>
+        <article id="equipo">
+            <div class="equipo__imagen__fija equipo__imagen__fondo">
+                <div class="equipo__fondo">
+                    <!--div data-aos="fade-right" data-aos-delay="900" class="col-lg-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 equipo__team4"><img src="assets/index/team4.jpg" class="img-fluid" alt=""></div-->
+                    <div data-aos="fade-up"  class="col-lg-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 equipo__descripcion">VIVÍ EXPERIENCIAS ÚNICAS DE LA MANO DE LOS MEJORES PROFESIONALES</div>
+                    <!--div data-aos="fade-left"  data-aos-delay="1200" class="col-lg-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 equipo__team3"><img src="assets/index/team2.png" alt="" class="img-fluid"></div-->
                 </div>
-            
-            
-
-        </article-->
+            </div>
+        </article>
         <article id="actividades" class="column">
-            <h3>TENEMOS ACTIVIDADES ACORDES A CADA EXPEDICIÓN</h3>
+            <h3 data-aos="fade-up">TE OFRECEMOS ACTIVIDADES ACORDES A CADA EXPEDICIÓN</h3>
             <div class="actividades__contenido__principal">
                 <div class="actividades__contenido col-lg-3 col-sm-12 col-xs-12" data-aos="fade-up"
                  data-aos-delay="250">
@@ -128,19 +102,19 @@
                     </div>
                     <p>TREKKING</p>
                 </div>
-                <div class="actividades__contenido col-lg-3 col-sm-12 col-xs-12" data-aos="fade-down" data-aos-delay="250">
+                <div class="actividades__contenido col-lg-3 col-sm-12 col-xs-12" data-aos="fade-down" data-aos-delay="100">
                     <div class="actividades__icono">
                         <img src="assets/index/climbinginter.svg" alt="trekking">
                     </div>
                     <p>MONTAÑISMO</p>
                 </div>
-                <div class="actividades__contenido col-lg-3 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-delay="250">
+                <div class="actividades__contenido col-lg-3 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-delay="100">
                     <div class="actividades__icono">
                         <img src="assets/index/escaladaiconointer.svg" alt="trekking">
                     </div>
                     <p>ESCALADA</p>
                 </div>
-                <div class="actividades__contenido col-lg-3 col-sm-12 col-xs-12" data-aos="fade-down" data-aos-delay="250">
+                <div class="actividades__contenido col-lg-3 col-sm-12 col-xs-12" data-aos="fade-down" data-aos-delay="100">
                     <div class="actividades__icono">
                         <img src="assets/index/rappeliconinter.svg" alt="trekking">
                     </div>
@@ -149,19 +123,18 @@
         </div>
         </article>
         <article id="galeria">
-            <h2>Momentos Buraleo</h2>
-            <div class="gridimagenes">
-                <div data-aos="zoom-out" class="crop col-lg-3"><a href="assets/index/m1.jpg" class="cbp-lightbox"><img class="img-fluid" src="assets/index/m1.jpg" alt=""></a></div>
-                <div data-aos="zoom-out" class="crop col-lg-3"><a href=""><img class="img-fluid" src="assets/index/m2.jpg" alt=""></a></div>
-                <div data-aos="zoom-out" class="crop col-lg-3"><a href=""><img class="img-fluid" src="assets/index/m3.jpg" alt=""></a></div>
-                <div data-aos="zoom-out" class="crop col-lg-3"><a href=""><img class="img-fluid" src="assets/index/rsz_m4.jpg" alt=""></a></div>
-                <div data-aos="zoom-out" class="crop col-lg-3"><a href=""><img class="img-fluid" src="assets/index/m5.jpg" alt=""></a></div>
-                <div data-aos="zoom-out" class="crop col-lg-3"><a href=""><img class="img-fluid" src="assets/index/m8.jpg" alt=""></a></div>
-                <div data-aos="zoom-out" class="crop col-lg-3"><a href=""><img class="img-fluid" src="assets/index/m6.jpg" alt=""></a></div>
-                <div data-aos="zoom-out" class="crop col-lg-3"><a href=""><img class="img-fluid" src="assets/index/rsz_m7.jpg" alt=""></a></div>
+            <h2 data-aos="fade-up">Momentos Buraleo</h2>
+            <div id="grid-galeria" class="gridimagenes ">
+                <div data-aos="zoom-out" class="crop cbp-item illustration col-lg-4 col-md-4 col-sm-12 col-xs-12"><a href="assets/index/originales/m1.jpg" class="cbp-lightbox"><img class="img-fluid" src="assets/index/m1.jpg" alt=""></a></div>
+                <div data-aos="zoom-out" class="crop cbp-item illustration col-lg-4 col-md-4 col-sm-12 col-xs-12"><a href="assets/index/originales/m2.jpg" class="cbp-lightbox"><img class="img-fluid" src="assets/index/m2.jpg" alt=""></a></div>
+                <div data-aos="zoom-out" class="crop cbp-item illustration col-lg-4 col-md-4 col-sm-12 col-xs-12"><a href="assets/index/originales/m3.jpg" class="cbp-lightbox"><img class="img-fluid" src="assets/index/m3.jpg" alt=""></a></div>
+                <div data-aos="zoom-out" class="crop cbp-item illustration col-lg-4 col-md-4 col-sm-12 col-xs-12"><a href="assets/index/originales/m4.jpg" class="cbp-lightbox"><img class="img-fluid" src="assets/index/rsz_m4.jpg" alt=""></a></div>
+                <div data-aos="zoom-out" class="crop cbp-item illustration col-lg-4 col-md-4 col-sm-12 col-xs-12"><a href="assets/index/originales/m5.jpg" class="cbp-lightbox"><img class="img-fluid" src="assets/index/m5.jpg" alt=""></a></div>
+                <div data-aos="zoom-out" class="crop cbp-item illustration col-lg-4 col-md-4 col-sm-12 col-xs-12"><a href="assets/index/originales/m8.jpg" class="cbp-lightbox"><img class="img-fluid" src="assets/index/m8.jpg" alt=""></a></div>
+                <div data-aos="zoom-out" class="crop cbp-item illustration col-lg-4 col-md-4 col-sm-12 col-xs-12"><a href="assets/index/originales/m6.jpg" class="cbp-lightbox"><img class="img-fluid" src="assets/index/m6.jpg" alt=""></a></div>
+                <div data-aos="zoom-out" class="crop cbp-item illustration col-lg-4 col-md-4 col-sm-12 col-xs-12"><a href="assets/index/originales/m7.jpg" class="cbp-lightbox"><img class="img-fluid" src="assets/index/rsz_m7.jpg" alt=""></a></div>
             </div>
-            <div class="banner"><a href="galeria.html">Mira la galería completa aquí <img
-                        src="assets/index/play_circle_white.png" alt=""></a></div>
+            <div class="banner"><a class="btn" href="galeria.html">Galería completa</a></div>
 
 </article>
 <footer>
@@ -178,6 +151,7 @@
         <li><a href="https://www.instagram.com/buraleoexpediciones/" target="_blank"><img class="footer__iconos"
                     src="assets/index/instagram blanco png.png" alt="Instagram icon">@buraleoexpediciones</a>
         </li>
+        <li><a href="http://wa.me/5492996101973" target="_blank">+549299</a></li>
     </ul>
 </footer>
         </div>
@@ -193,6 +167,19 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script type="text/javascript" src="cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            var gridContainer = jQuery('#grid-galeria');
+                filtersContainer = $('#filters-container');
+
+            // init cubeportfolio
+            gridContainer.cubeportfolio({
+                // cubeportfolio options
+                caption:'zoom'
+            });
+        });
     </script>
     
 </body>
