@@ -30,12 +30,6 @@
   
 }
 
-@media (max-width: 650px ){
-    .inicio__texto{
-        font-size:4rem;  
-       }
-}
-
 html{
     font-size: 62.5%;
 }
@@ -202,11 +196,15 @@ nav {
     flex-flow:column wrap;
     //height: 500px;
     height: 500px;
-    align-items: start;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     margin:auto;
     position:relative;
+    text-align:center;
+    h2{
+        font-size: 7rem;
+    }
 }
 .inicio__imagen__fija{
     height: 500px;
@@ -608,7 +606,7 @@ footer{
     justify-content: space-around;
     align-items: center;
     height: 145px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     a{
         text-decoration: none;
         color:white; 
@@ -621,8 +619,8 @@ footer{
 
 
 .footer__logo{
-    width:100px;
-    height: 90px;
+    width:110px;
+    height: 100px;
     margin:20px;
 }
 
@@ -638,13 +636,9 @@ footer{
     font-size: 2rem;
     width: 100%;
     padding:20px;
+    margin-top:40px;
+    margin-bottom: 25px;
 }
-
-
-/*.imagen{
-    max-width: 50%;
-    margin: 20px;
-}*/
 
 .actividades__imagen__fondo{
     background-image: url("../assets/index/montaniasfondo.jpg");
@@ -671,6 +665,12 @@ footer{
  font-weight: bold;
  color:$azulprimario;
  border-bottom: 1px solid $primariorgba;
+}
+
+.actividades__imagen{
+    img{
+        border-radius: 15px;
+    }
 }
 
 .actividades__descripcion{
